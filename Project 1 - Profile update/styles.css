@@ -23,7 +23,7 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+nav {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -96,7 +96,10 @@ header h1{
   font-style: italic;
   font-weight: bold;
 }
-.character-card {
+section{
+  width: 100%;
+}
+article {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -106,10 +109,10 @@ header h1{
   border-radius: 6px;
   transition: all .5s;
 }
-.character-card:hover {
+article:hover {
   border-color: #ff4a05;
 }
-.character-card.bg-image{
+article.bg-image{
   background: url('images/amsterdam.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
