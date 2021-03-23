@@ -1,0 +1,220 @@
+/*----------------------- GENERAL STYLING -----------------------*/
+*{
+  font-family: 'Roboto', sans-serif;
+  color: #999;
+  word-spacing: 0.5px;
+}
+body{
+  background-color: #383949;
+}
+#contact{
+  background-image: linear-gradient(#2d2e3c, #383949);
+}
+#contact, #skills,
+h1, h2, h3{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+p{
+  text-align: center;
+}
+h1{
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+h2{
+  text-transform: uppercase;
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin: 56px auto 40px;
+}
+h3{
+  font-size:1.5rem;
+  font-weight: normal;
+  margin: 24px 0 16px;
+}
+p{
+  font-size: 1.33rem;
+  line-height: 1.75rem;
+  font-weight: 100;
+}
+img{
+  margin: 16px 0;
+}
+.portfolio{
+  margin-bottom: 40px;
+}
+.profile img{
+  max-width: 250px;
+  border-radius: 50%;
+}
+.s-vis{
+  display: inline-block;
+}
+.s-invis{
+  display: none;
+}
+/*----------------------- NAVIGATION -----------------------*/
+nav a.flex-item{
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  background-color: #2d2e3c;
+  padding: 16px 0;
+  font-weight:600;
+  text-align: center;
+  width: 100%;
+  margin: 4px 0;
+}
+/*----------------------- PROFILE -----------------------*/
+nav.flex-container{
+  margin: 40px 0;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-container img{
+  width: 100%;
+}
+/*----------------------- MAIN -----------------------*/
+main{
+  background-color: #2d2e3c;
+  display: grid;
+}
+main img{
+  width: 100%;
+  height: auto;
+}
+.wrapper{
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.flex-item{
+  flex: 0 0 100%;
+}
+ul li{
+  font-size: 1.2rem;
+  text-align: left;
+}
+/*----------------------- FOOTER -----------------------*/
+footer{
+  margin-top: 40px;
+}
+#contact p, #contact b{
+  color: #7a7a7a;
+}
+footer .flex-item{
+  flex: 1 0 auto;
+  align-self: center;
+  font-weight: 600;
+}
+footer p{
+  text-align:left;
+}
+footer a{
+  float: right;
+}
+hr {
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #606060;
+  opacity: 0.2;
+}
+footer nav a{
+  text-transform: uppercase;
+}
+a.mobile{
+    display: none;
+}
+/*----------------------- TABLETS -----------------------*/
+@media screen and (min-width: 768px){
+  .s-vis{
+    display: none;
+  }
+  .s-invis{
+    display: inline-block;
+  }
+  nav.flex-container{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  nav a.flex-item{
+    flex: 0 0 25%;
+    background-color: transparent;
+  }
+  .flex-container.profile{
+    flex-flow: row wrap;
+  }
+  .flex-container.profile p{
+    order: -1;
+    flex: 1 0 33%;
+    max-width: 410px;
+    text-align: left;
+  }
+  .flex-container.profile img{
+    width: 30%;
+    max-width: 250px;
+    margin-left: 8px;
+    border-radius: 50%;
+  }
+  article.flex-item{
+    flex: 1 0 40%;
+  }
+  .portfolio article{
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  #contact p{
+    width: 80%;
+    margin: 24px auto;
+  }
+  #contact br{
+    display: none;
+  }
+  footer nav{
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer nav a{
+    display: none;
+  }
+  .mobile{
+      display: none;
+  }
+  .tablet{
+    display: inline-block;
+  }
+  footer a.flex-item{
+    font-size: initial;
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1024px){
+  /* .wrapper{
+    margin: 0 auto;
+  } */
+  nav.flex-container{
+    width: 50%;
+  }
+  header section:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  article.flex-item{
+    flex: 1 0 30%;
+  }
+}

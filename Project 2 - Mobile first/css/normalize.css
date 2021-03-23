@@ -1,0 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  list-style-type: none;
+}
+body{
+  margin:0;
+}
+ul{
+  list-style: none;
+}
