@@ -15,6 +15,12 @@ h1, h2, h3{
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
 }
+.wrapper{
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
 p{
   text-align: center;
 }
@@ -83,13 +89,6 @@ main img{
   width: 100%;
   height: auto;
 }
-.wrapper{
-  padding-left: 16px;
-  padding-right: 16px;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1024px;
-}
 .flex-container{
   display: flex;
   flex-flow: row wrap;
@@ -135,6 +134,13 @@ a.mobile{
 }
 /*----------------------- TABLETS -----------------------*/
 @media screen and (min-width: 768px){
+  .wrapper{
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
   .s-vis{
     display: none;
   }
@@ -203,9 +209,6 @@ a.mobile{
   }
 }
 @media screen and (min-width: 1024px){
-  /* .wrapper{
-    margin: 0 auto;
-  } */
   nav.flex-container{
     width: 50%;
   }
